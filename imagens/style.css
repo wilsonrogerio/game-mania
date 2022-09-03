@@ -1,0 +1,87 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: rgba(35, 104, 236, 0.97);
+    margin: 0;
+    padding: 0;
+}
+header{
+    height: 83px;
+    background-color: black;
+}
+.container{
+     width: 90%;
+     max-width: 1300px;
+     margin: auto;
+}
+
+.itens_login{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}    
+.bar{
+    height: 40px;
+    background-color: green;
+}
+.links{
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    align-items: center;
+    text-decoration: none;
+}
+.links a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: white;
+}
+.links a:hover{
+    scale: 1.1;
+
+}
+.fundo{
+    display: flex;
+    align-items: center;
+    background-image: url(../imagens/fundo\ das\ promos.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    margin: 30px;
+    padding: 10px;
+}
+.amd{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding: 0 120px;
+}
+#logo:hover{
+    scale: 1.1;
+
+}
+#login:hover{
+    scale: 1.1;
+
+}
+#lupa:hover{
+    scale: 1.1;
+}
+#carrinho:hover{
+    scale: 1.1;
+}
+#favoritos:hover{
+    scale: 1.1;
+}
+#amd:hover{
+    scale: 1.1;
+
+}
+#nvidia:hover{
+    scale: 1.1;
+}
