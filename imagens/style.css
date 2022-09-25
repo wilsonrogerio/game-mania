@@ -1,87 +1,248 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap');
+
+
+
 *{
     margin: 0px;
     padding: 0px;
 }
+.grid{ 
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;   
+}
 body{
-    background-color: rgba(35, 104, 236, 0.97);
-    margin: 0;
-    padding: 0;
+    background: linear-gradient(178.35deg, rgba(35, 104, 236, 0.97) 32.89%, rgba(3, 87, 249, 0.47) 135.75%);
+    background-repeat: no-repeat;
+    height: 100%;
+    
 }
-header{
-    height: 83px;
-    background-color: black;
-}
-.container{
-     width: 90%;
-     max-width: 1300px;
-     margin: auto;
+h1{
+    display: none;
 }
 
-.itens_login{
+
+
+
+header{
+    background-color: #010101;
+    width: 100%;
     display: flex;
+    padding: 10px 0px;
+}
+.funcoes_header{
+    display: flex;
+    align-items: center;
+}
+.funcoes_header h1{
+    display: none;
+}
+.funcoes_header .fav_car{
+    display: flex;
+    width: 190px;
+    justify-content: end;
+
+}
+#favoritos{
+    padding-left: 40px;
+}
+.area_login{
+    display: flex;
+    width: 170px;
+    justify-content: flex-end;
+    color: white;
+    font-size: 19px;
+}
+.area_login p{
+    padding-left: 5px;
+}
+.funcoes_header form{
+    display: flex;
+    width: 700px;
+    justify-content: flex-end;
+    padding-right: 35px;
+
+}
+
+
+
+
+
+.bar{
+    background-color: rgba(16, 138, 35, 0.63);
+    padding: 10px;
+}
+.links_bars{
+    display: flex;
+    font-size: 20px;
     justify-content: space-between;
+
+}
+.links_bars a{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+.fundo{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.destaques{
+    background: url(../imagens/fundo\ das\ promos.png);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+
+
+
+.ofertas{
+    background: rgba(197, 188, 188, 0.53);
+    border-radius: 10px;
+    border-top: 20px;
+    padding: 15px;
     align-items: center;
     
 
-}    
-.bar{
-    height: 40px;
-    background-color: green;
+
 }
-.links{
+.ofertas h2{
+    font-size: 27px;
+    padding-left: 450px;
+    font-family: 'Titillium Web', sans-serif;
+    
+
+
+    
+}
+.ofertas h3{
+    font-size: 20px;
+    padding: 8px;
+
+
+}
+
+
+.grade_ofertas{
     display: flex;
     justify-content: space-between;
-    height: 40px;
-    align-items: center;
-    text-decoration: none;
+    padding: 15px;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    
 }
-.links a{
+.pc_gamer{
+    background: rgba(217, 217, 217, 0.9);
+    display: flex;
+    border-radius: 9px;
+    width: 250px;
+    height: 120px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    border: 20px;    
+}
+
+
+
+.bloco_ofertas{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+.ofertas_itens{
+    background: rgba(217, 217, 217, 0.9);
+    width: 230px;
+    height: 325px;
+    margin: 12px;
+    border-radius: 4px;
+
+}
+.ofertas_itens button{
+   padding-left: 170px;
+   padding-top: 10px;
+   border: none;
+   background: none;    
+}
+.ofertas_itens a{
+    padding-left: 10px;
+}
+.ofertas_itens h2{
+    font-size: 20px;
+    padding-left: 15px;
+    padding-bottom: 12px;
+    font-family: 'Titillium Web', sans-serif;
+
+}
+.ofertas_itens .comprar{
+    width: 200px;
+    background-color: red;
+    align-items: center;
+    padding: 5px 65px;
+    border-radius: 4px;
+    font-size: 24px;
     text-decoration: none;
-    text-transform: uppercase;
-    font-size: 18px;
     color: white;
 }
-.links a:hover{
-    scale: 1.1;
 
-}
-.fundo{
+
+.retangulo_ofertas{
     display: flex;
     align-items: center;
-    background-image: url(../imagens/fundo\ das\ promos.png);
-    background-repeat: no-repeat;
-    width: 100%;
-    margin: 30px;
-    padding: 10px;
+    justify-content: space-between;
+    padding: 20px 10px;
+    flex-wrap: wrap;
 }
-.amd{
+.retangulo_ofertas h3{
+    color: white;
+    font-size: 30px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.oferta_1{
+    background-image: url(../imagens/Group\ 11.png);
+    background-repeat: no-repeat;
+    width: 498px;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.oferta_2{
+    background-image: url(../imagens/Group\ 12.png);
+    background-repeat: no-repeat;
+    width: 498px;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+
+
+
+
+.links_footer{
+    background: #0D0101;
+}
+.links_colum{
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    align-items: center;
-    padding: 0 120px;
 }
-#logo:hover{
-    scale: 1.1;
+.links_footer h3{
+    color: white;
+}
 
-}
-#login:hover{
-    scale: 1.1;
 
-}
-#lupa:hover{
-    scale: 1.1;
-}
-#carrinho:hover{
-    scale: 1.1;
-}
-#favoritos:hover{
-    scale: 1.1;
-}
-#amd:hover{
-    scale: 1.1;
 
-}
-#nvidia:hover{
-    scale: 1.1;
-}
+
+
+
+
