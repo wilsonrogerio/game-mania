@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Game Mania</title>
+    <link rel="stylesheet" href="style-login.css">
+</head>
+<body>
+    <section>
+        <div class="login">
+                <h1>Login</h1>
+                <br><br>
+                <form action="">
+                    <input type="email" placeholder="email">
+                    <br><br>
+                    <input type="password" placeholder="senha">
+                    <br><br>
+                    <input id="numero" type="number" placeholder="numero de celular">
+                    <button>
+                        login
+                    </button>
+                    <button id="cadastro" onclick="mostrarCadastro()">
+                        cadastre-se
+                    </button>
+    
+    
+    
+                </form>
+    
+         </div>
+
+    </section>
+    <script>
+        let cadastro = document.getElementById("cadastro");
+        function mostrarCadastro(){
+
+            if (window.getComputedStyle(numero).display != "flex"){
+                numero.style.display = "flex"
+            
+            }else{
+                numero.style.display ="none"
+            }
+            event.preventDefault()
+
+
+
+        }
+         
+
+    </script>
+
+    
+</body>
+</html>

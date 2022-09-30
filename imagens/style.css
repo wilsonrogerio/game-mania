@@ -1,5 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap');
 
 
 
@@ -27,9 +28,33 @@ h1{
 
 header{
     background-color: #010101;
+    padding: 10px 0px;
     width: 100%;
     display: flex;
-    padding: 10px 0px;
+
+}
+#menu{
+    display: none;
+}
+.funcoes_header form{
+    display: flex;
+    align-items: center;
+}
+.funcoes_header input{
+    width: 25vw;
+    height: 20px;
+    border-radius: 9px;
+    border: none;
+    padding-left: 10px;
+    
+}
+.funcoes_header button{
+    background-color: transparent;
+    position: absolute;
+    border: none;
+    height: 48px;
+    width: 30px;
+    padding-right: 50px;
 }
 .funcoes_header{
     display: flex;
@@ -53,6 +78,8 @@ header{
     justify-content: flex-end;
     color: white;
     font-size: 19px;
+    padding-right: 35px;
+    padding-left: 60px;
 }
 .area_login p{
     padding-left: 5px;
@@ -83,6 +110,9 @@ header{
     color: white;
     text-decoration: none;
 }
+.links_bars form{
+    display: none;
+}
 
 
 
@@ -109,13 +139,13 @@ header{
     border-top: 20px;
     padding: 15px;
     align-items: center;
+    text-align: center;
     
 
 
 }
 .ofertas h2{
     font-size: 27px;
-    padding-left: 450px;
     font-family: 'Titillium Web', sans-serif;
     
 
@@ -146,12 +176,14 @@ header{
     height: 120px;
     align-items: center;
     justify-content: space-between;
-    padding: 8px;
-    border: 20px;    
+    padding: 8px;   
 }
 
 
 
+.ofertas_principal{
+    padding-bottom: 10px;
+}
 .bloco_ofertas{
     display: flex;
     justify-content: space-between;
@@ -229,18 +261,130 @@ header{
 
 
 
+
+/* css do footer*/
+
 .links_footer{
     background: #0D0101;
+    height: 100%;
 }
 .links_colum{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .links_footer h3{
     color: white;
 }
+.link_cadastro{
+    display: flex;
+    flex-direction: column;
+}
+.link_cadastro :not(first-child){
+    display: flex;
+    flex-direction: column;
+    padding: 7px;
+
+}
+.cadastro_email{
+    position: relative;
+}
+.link_cadastro a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+.link_cadastro h3{
+    font-size: 30px;
+    padding: 10px 0px;
+    font-family: 'Titillium Web', sans-serif;
+    
+}
+.cadastro_email{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+.link_cadastro input{
+    width: 78%;
+    background-color: lightgray;
+    border: none;
+}
+.link_cadastro button{
+    background-color: rgba(255, 0, 0, 0.807);
+    font-family: serif;
+    font-size: 15px;
+    width: 60px;
+    position: absolute;
+    right: 0px;
+    border: none;
 
 
+    
+
+}
+.link_redes{
+    display: flex;
+    flex-direction: column;
+    padding: 7px;
+    
+}
+.link_redes a{
+    padding: 10px;
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+}
+.link_redes h3{
+    font-size: 30px;
+    font-family: 'Titillium Web', sans-serif;
+    padding: 9px;
+}
+#site_seguro{
+    margin: 20px;
+}
+
+
+
+
+
+
+
+  /* responsividade */
+@media screen and ( max-width: 1024px){
+    .funcoes_header{
+        display: flex;
+        justify-content: center;
+    }
+    .fav_car{
+        position: absolute;
+        right: 60px;
+    }
+    .area_login{
+        display: none;
+    }
+    .funcoes_header form{
+        display: none;
+    }
+    #menu{
+        display: flex;
+        position: absolute;
+        left: 60px;
+    }
+    
+    #favoritos{
+        display: none;
+    }
+    .links_bars a{
+        display: none;
+    }
+    .links_bars form{
+        display: flex;
+    }
+
+    
+}
 
 
 
