@@ -24,7 +24,7 @@ h1{
 }
 
 
-
+  /*css header*/
 
 header{
     background-color: #010101;
@@ -96,6 +96,8 @@ header{
 
 
 
+/*css barra de navegaçao navbar*/
+
 .bar{
     background-color: rgba(16, 138, 35, 0.63);
     padding: 10px;
@@ -112,10 +114,17 @@ header{
 }
 .links_bars form{
     display: none;
+
 }
 
 
 
+
+
+
+
+
+/*ofertas no primeiro banner*/
 
 .fundo{
     padding-top: 15px;
@@ -376,13 +385,67 @@ header{
     #favoritos{
         display: none;
     }
+
+
+
+    /*nav bar*/
+    .links_bars{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+
+    }
     .links_bars a{
         display: none;
     }
+
     .links_bars form{
         display: flex;
+        position: relative;
+        width: 35vw;
+        justify-content: center;
+        align-items: center;
+        padding-right: 35px;
+    }
+    .links_bars button{
+      background-color: transparent;
+      border: none;
+      position: absolute;
+      right: 0;
+      height: 48px;
+      width: 40px;
+      padding-right: 50px;
+    }
+    #lupa{
+        width: 50px;
+        height: 55px;
+        top: -2;
+    
+    
+    }
+    .links_bars input{
+        border-radius: 10px;
+        border: none;
+        width: 35vw;
+        height: 28px;
     }
 
+
+
+
+
+    /*banner*/
+    .destaques{
+        background: url(../imagens/fundo\ promo.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #nvidia{
+        display: none;
+    }
     
 }
 
